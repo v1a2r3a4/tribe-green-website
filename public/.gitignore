@@ -1,0 +1,23 @@
+# Sensitive configuration files
+app/config/database.php
+app/config/mail.php
+
+# Dependencies
+/vendor/
+
+# Environment and sensitive credentials
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,348 @@
+.catalogue-banner {
+    padding: 65px 0 55px;
+    background: linear-gradient(120deg, #f8f7f1, #eaf0e4);
+}
+
+.catalogue-banner h1 {
+    margin: 17px 0 12px;
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.catalogue-banner h1 span {
+    color: var(--green);
+    font-style: italic;
+}
+
+.catalogue-banner p {
+    max-width: 600px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.catalogue-breadcrumb {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.catalogue-breadcrumb a {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.catalogue-section {
+    padding: 45px 0 85px;
+}
+
+.catalogue-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.catalogue-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(100%, 480px);
+    padding: 5px 6px 5px 15px;
+    border: 1px solid #e3e6dc;
+    border-radius: 8px;
+    background: white;
+}
+
+.catalogue-search > span {
+    color: var(--green);
+    font-size: 25px;
+}
+
+.catalogue-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.catalogue-search button {
+    padding: 11px 17px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    background: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sort-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.sort-control label {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.sort-control select {
+    max-width: 190px;
+    padding: 12px 28px 12px 12px;
+    border: 1px solid #e3e6dc;
+    border-radius: 7px;
+    color: var(--text);
+    background: white;
+    font-size: 12px;
+}
+
+.catalogue-layout {
+    display: grid;
+    grid-template-columns: 245px minmax(0, 1fr);
+    align-items: start;
+    gap: 30px;
+}
+
+.filter-sidebar {
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: white;
+}
+
+.filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.filter-heading h2,
+.results-heading h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.filter-heading a {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.filter-group {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.filter-group h3 {
+    margin: 0 0 15px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.filter-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 13px 0;
+    color: #596259;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.filter-option input {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+    accent-color: var(--green);
+}
+
+.filter-apply {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.results-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.results-heading p {
+    margin: 7px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.catalogue-product-image {
+    position: relative;
+    display: block;
+    height: 200px;
+    overflow: hidden;
+    background: #e9efe3;
+}
+
+.catalogue-product-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.catalogue-product-image:hover > img {
+    transform: scale(1.05);
+}
+
+.catalogue-product-image .product-placeholder {
+    height: 100%;
+}
+
+.catalogue-product-image .product-category {
+    z-index: 1;
+}
+
+.product-info h3 a {
+    color: var(--text);
+}
+
+.product-info h3 a:hover {
+    color: var(--green);
+}
+
+.catalogue-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 35px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.catalogue-pagination a {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.no-products {
+    padding: 65px 20px;
+    border: 1px dashed #d8dfd2;
+    border-radius: 10px;
+    text-align: center;
+    background: #fafbf7;
+}
+
+.no-products > span {
+    color: var(--green);
+    font-size: 36px;
+}
+
+.no-products h3 {
+    margin: 12px 0;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.no-products p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.no-products .btn {
+    margin-top: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .catalogue-layout {
+        grid-template-columns: 210px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .filter-sidebar {
+        padding: 16px;
+    }
+
+    .catalogue-product-image {
+        height: 175px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .catalogue-banner {
+        padding: 45px 0;
+    }
+
+    .catalogue-section {
+        padding: 30px 0 55px;
+    }
+
+    .catalogue-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .catalogue-search {
+        width: 100%;
+    }
+
+    .sort-control {
+        justify-content: space-between;
+    }
+
+    .sort-control select {
+        flex: 1;
+        max-width: 240px;
+    }
+
+    .catalogue-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-sidebar {
+        padding: 18px;
+    }
+
+    .filter-group {
+        padding: 16px 0;
+    }
+
+    .catalogue-product-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .catalogue-product-image {
+        height: 125px;
+    }
+
+    .catalogue-product-image .product-placeholder-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+
+    .catalogue-product-image .placeholder-brand {
+        font-size: 8px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+}
